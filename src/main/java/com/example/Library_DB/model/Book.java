@@ -14,7 +14,6 @@ public class Book {
     private String author;
     private String name;
     private int year;
-
     public Book(){}
 
     public Book(String author, String name, int year) {
