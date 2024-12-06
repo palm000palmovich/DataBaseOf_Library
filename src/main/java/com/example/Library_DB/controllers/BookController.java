@@ -21,9 +21,9 @@ public class BookController {
 
     //Get all
     @GetMapping
-    public ResponseEntity getAll(@RequestParam String name,
-                                   @RequestParam String author,
-                                   @RequestParam String part){
+    public ResponseEntity getAll(@RequestParam(required = false) String name,
+                                   @RequestParam(required = false) String author,
+                                   @RequestParam(required = false) String part){
         if (name != null){return ResponseEntity.ok(bookService.findByName(name));}
         if (author != null){return ResponseEntity.ok(bookService.findByAuthor(author));}
         if (part != null){return ResponseEntity.ok(bookService.findByNamePart(part));}

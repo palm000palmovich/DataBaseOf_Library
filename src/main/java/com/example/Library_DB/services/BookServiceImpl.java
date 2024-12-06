@@ -55,14 +55,14 @@ public class BookServiceImpl {
     }
 
     public Book findByName(String name){
-        return bookRepository.findByName(name);
+        return bookRepository.findByNameIgnoreCase(name);
     }
 
     public Collection<Book> findByAuthor(String author){
-        return bookRepository.findBooksByAuthor(author);
+        return bookRepository.findBooksByAuthorContainsIgnoreCase(author);
     }
 
     public Collection<Book> findByNamePart(String part){
-        return bookRepository.findAllByBookContains(part);
+        return bookRepository.findAllByNameContainsIgnoreCase(part);
     }
 }
