@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 import java.util.Objects;
 
 @Entity
-@Table(name = "Books")
+@Table(name = "book")
 public class Book {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -14,6 +14,9 @@ public class Book {
     private String author;
     private String name;
     private int year;
+    @ManyToOne
+    @JoinColumn(name = "reader_id")
+    private Reader reader;
 
     public Book(){}
 
