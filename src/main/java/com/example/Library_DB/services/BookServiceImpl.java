@@ -50,9 +50,7 @@ public class BookServiceImpl {
     }
 
     //Delete all
-    public void deleteAll(){
-        bookRepository.deleteAll();
-    }
+    public void deleteAll(){bookRepository.deleteAll();}
 
     public Book findByName(String name){
         return bookRepository.findByNameIgnoreCase(name);

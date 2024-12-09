@@ -16,12 +16,13 @@ public interface BookRepository extends JpaRepository<Book, Long> {
     //IgnoreCase - регистро незав.
     Collection<Book> findAllByNameContainsIgnoreCase(String part);
 
-    //Совпадает и по имени и по атвору
+
+    /*//Совпадает и по имени и по атвору
     Collection<Book> findBooksByNameAndAuthor(String name, String author);
 
     //Поиск по имени или автору
     Collection<Book> findBooksByNameOrAuthor(String name, String author);
 
     //Поиск с учетом значение id
-    Collection<Book> findBooksByNameOrAuthorAndIdGreaterThan(String name, String author, Long number);
+    Collection<Book> findBooksByNameOrAuthorAndIdGreaterThan(String name, String author, Long number);*/
 }

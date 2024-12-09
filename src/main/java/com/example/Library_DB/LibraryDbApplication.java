@@ -11,5 +11,4 @@ public class LibraryDbApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(LibraryDbApplication.class, args);
 	}
-
 }

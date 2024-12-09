@@ -14,7 +14,6 @@ public class Book {
     private String author;
     private String name;
     private int year;
-
     @ManyToOne
     @JoinColumn(name = "reader_id")
     private Reader reader;
