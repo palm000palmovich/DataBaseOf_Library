@@ -10,7 +10,6 @@ public class Book {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String author;
     private String name;
     private int year;

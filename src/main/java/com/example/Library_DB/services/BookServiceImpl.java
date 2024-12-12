@@ -11,7 +11,6 @@ import java.util.List;
 @Service
 public class BookServiceImpl {
     private BookRepository bookRepository;
-
     @Autowired
     public BookServiceImpl(BookRepository bookRepository){
         this.bookRepository = bookRepository;

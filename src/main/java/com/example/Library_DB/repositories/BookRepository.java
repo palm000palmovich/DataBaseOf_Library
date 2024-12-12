@@ -16,7 +16,6 @@ public interface BookRepository extends JpaRepository<Book, Long> {
     //IgnoreCase - регистро незав.
     Collection<Book> findAllByNameContainsIgnoreCase(String part);
 
-
     /*//Совпадает и по имени и по атвору
     Collection<Book> findBooksByNameAndAuthor(String name, String author);
 

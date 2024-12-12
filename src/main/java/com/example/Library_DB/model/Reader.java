@@ -11,7 +11,6 @@ public class Reader {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-
     private int personalNumber;
     private String firstName;
     private String secondName;
